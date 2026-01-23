@@ -1,6 +1,6 @@
-# pixi-live2d-display-advanced
+# untitled-pixi-live2d-engine
 
-![NPM Version](https://img.shields.io/npm/v/pixi-live2d-display-advanced?style=flat-square&label=version)
+![NPM Version](https://img.shields.io/npm/v/untitled-pixi-live2d-engine?style=flat-square&label=version)
 ![Cubism version](https://img.shields.io/badge/Cubism-2/3/4/5-ff69b4?style=flat-square)
 
 **English (Current)** | [**简体中文**](README-ZH.md)
@@ -12,7 +12,7 @@ Compared to the official Live2D SDK, this library significantly reduces usage co
 
 This project is based on the  
 [pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) branch.  
-Starting from **v2.0.0**, it is **fully compatible with PixiJS v8 and Live2D Cubism 5.4 SDK**, and further provides:
+It is **fully compatible with PixiJS v8 and Live2D Cubism 5.4 SDK**, and further provides:
 
 - Additional practical APIs
 - Stronger TypeScript type safety
@@ -21,10 +21,8 @@ Starting from **v2.0.0**, it is **fully compatible with PixiJS v8 and Live2D Cub
 > [!IMPORTANT]
 > The project is currently in the testing phase. If you want to try it out, please install it using the following command:
 >
-> If you are using PixiJS v7, please install the v1.x version.
->
 > ```shell
-> npm install pixi-live2d-display-advanced@prerelease
+> npm install untitled-pixi-live2d-engine@prerelease
 > ```
 
 ---
@@ -65,19 +63,19 @@ Starting from **v2.0.0**, it is **fully compatible with PixiJS v8 and Live2D Cub
 ### Using npm / pnpm
 
 ```bash
-pnpm add pixi-live2d-display-advanced
+pnpm add untitled-pixi-live2d-engine
 # or
-npm install pixi-live2d-display-advanced
+npm install untitled-pixi-live2d-engine
 ```
 
 ```ts
-import { Live2DModel } from 'pixi-live2d-display-advanced'
+import { Live2DModel } from 'untitled-pixi-live2d-engine'
 
 // Cubism Legacy only (Cubism 2.1)
-import { Live2DModel } from 'pixi-live2d-display-advanced/cubism-legacy'
+import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism-legacy'
 
 // Cubism Modern only (Cubism 3 / 4 / 5)
-import { Live2DModel } from 'pixi-live2d-display-advanced/cubism'
+import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism'
 ```
 
 ---
@@ -148,7 +146,7 @@ The following example is based on **PixiJS v8** and supports both Cubism Legacy 
 
 ```ts
 import { Application } from 'pixi.js'
-import { configureCubism, Live2DModel } from 'pixi-live2d-display-advanced'
+import { configureCubism, Live2DModel } from 'untitled-pixi-live2d-engine'
 
 const app = new Application()
 await app.init({

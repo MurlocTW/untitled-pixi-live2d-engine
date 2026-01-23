@@ -1,6 +1,6 @@
-# pixi-live2d-display-advanced
+# untitled-pixi-live2d-engine
 
-![NPM Version](https://img.shields.io/npm/v/pixi-live2d-display-advanced?style=flat-square&label=version)
+![NPM Version](https://img.shields.io/npm/v/untitled-pixi-live2d-engine?style=flat-square&label=version)
 ![Cubism version](https://img.shields.io/badge/Cubism-2/3/4/5-ff69b4?style=flat-square)
 
 [**English**](README.md) | **简体中文 (当前)**
@@ -11,8 +11,8 @@
 相较于官方 Live2D SDK，本库在保持功能完整的同时，显著降低了使用复杂度，并在稳定性与长期维护性上进行了优化。
 
 本项目基于
-[pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) 分支开发，
-自 **v2.0.0** 起已 **完全适配 PixiJS v8 与 Live2D Cubism 5.4 SDK**，并在此基础上：
+[pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) 分支开发，**完全适配 PixiJS v8 与 Live2D Cubism 5.4 SDK**，
+并在此基础上：
 
 - 增加了多项实用 API
 - 强化了 TypeScript 类型安全
@@ -21,10 +21,8 @@
 > [!IMPORTANT]
 > 项目目前处于测试阶段，如想尝试，请使用以下命令进行安装。
 >
-> 如果使用 PixiJS v7，请安装 v1.x 版本。
->
 > ```shell
-> npm install pixi-live2d-display-advanced@prerelease
+> npm install untitled-pixi-live2d-engine@prerelease
 > ```
 
 ---
@@ -65,19 +63,19 @@
 ### 使用 npm / pnpm
 
 ```bash
-pnpm add pixi-live2d-display-advanced
+pnpm add untitled-pixi-live2d-engine
 # 或
-npm install pixi-live2d-display-advanced
+npm install untitled-pixi-live2d-engine
 ```
 
 ```ts
-import { Live2DModel } from 'pixi-live2d-display-advanced'
+import { Live2DModel } from 'untitled-pixi-live2d-engine'
 
 // 仅使用 Cubism Legacy（Cubism 2.1）
-import { Live2DModel } from 'pixi-live2d-display-advanced/cubism-legacy'
+import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism-legacy'
 
 // 仅使用 Cubism Modern（Cubism 3 / 4 / 5）
-import { Live2DModel } from 'pixi-live2d-display-advanced/cubism'
+import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism'
 ```
 
 ---
@@ -149,7 +147,7 @@ cubism.js
 
 ```ts
 import { Application } from 'pixi.js'
-import { configureCubism, Live2DModel } from 'pixi-live2d-display-advanced'
+import { configureCubism, Live2DModel } from 'untitled-pixi-live2d-engine'
 
 const app = new Application()
 await app.init({

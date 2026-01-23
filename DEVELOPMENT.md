@@ -2,77 +2,57 @@
 
 #### Cloning via SSH
 
-Run the following command to clone the repo with submodule:
-
 ```sh
-git clone git@github.com:guansss/pixi-live2d-display.git --recursive
+git clone git@github.com:Untitled-Story/untitled-pixi-live2d-engine.git --recursive
 ```
 
 #### Cloning via HTTPS
 
-Run the following command to clone the repo _without_ submodule:
-
 ```sh
-git clone https://github.com/guansss/pixi-live2d-display.git
+git clone https://github.com/Untitled-Story/untitled-pixi-live2d-engine.git --recursive
 ```
 
-Then follow one of the following methods to manually install the submodule:
-
-**Method 1**
+If you already cloned without submodules:
 
 ```sh
-git config --global url."https://github.com/guansss/CubismWebFramework.git".insteadOf "git@github.com:guansss/CubismWebFramework.git"
-
-git submodule sync
-git submodule update --init
-```
-
-**Method 2**
-
-Edit `.gitmodules` and replace `git@github.com:guansss/CubismWebFramework.git` with `https://github.com/guansss/CubismWebFramework.git` (don't commit this change if you are contributing to this project!).
-
-Then run:
-
-```sh
-git submodule sync
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 ## Setup
 
-Install dependencies:
+Install dependencies (pnpm is recommended, but npm works too):
 
 ```sh
+pnpm install
+# or
 npm install
 ```
 
-Download Live2D core files into `./core`:
+Download Live2D core files into `./Core`:
 
 ```sh
 npm run setup
 ```
 
-## Testing
+## Build and checks
 
-There's a bundle test that requires a production build. Before running the tests for the first time, you need to build the project: (at some point I will automate this step so you don't have to do it manually)
+Create production bundles:
 
 ```sh
 npm run build
 ```
 
-Then you can run the tests:
+Generate bundled type definitions:
 
 ```sh
-npm run test
+npm run type
 ```
 
-Or run the tests and update snapshots:
+Run lint + typecheck:
 
 ```sh
-npm run test:u
+npm run check
 ```
-
-If you get an error like `This version of ChromeDriver only supports Chrome version XX`, you need to either upgrade or downgrade your Chrome browser to match that version, or run `npm install chromedriver@<version>` to install the correct version of ChromeDriver (don't commit this change if you are contributing to this project!).
 
 ## Playground
 
@@ -100,7 +80,7 @@ git update-index --no-skip-worktree playground/index.ts
 
 Contributions are welcome! Please open an issue or submit a pull request if you have any ideas or suggestions.
 
-Before contributing, or better yet, before each commit, please run the following command to lint and fix the code:
+Before contributing, or better yet, before each commit, please run:
 
 ```sh
 npm run lint:fix

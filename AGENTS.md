@@ -5,7 +5,7 @@
 - `src/` contains the TypeScript implementation of the PixiJS Live2D plugin (core models, factories, utilities).
 - `src/cubism-legacy/` houses Cubism 2 (CSM2) runtime integrations; the main Cubism 3/4/5 flow lives in `src/` and `src/cubism-common/`.
 - `playground/` is a minimal Vite demo for manual checks only; keep production logic out.
-- `core/` and `cubism/` hold Cubism SDK assets/submodules; treat them as vendored dependencies.
+- `Core/` and `cubism/` hold Cubism SDK assets/submodules; treat them as vendored dependencies.
 - Generated outputs include `dist/` (bundles) and `types/` (if generated). Do not edit by hand.
 
 ## Build, Test, and Development Commands
@@ -39,5 +39,5 @@
 ## Security & Configuration Tips
 
 - Assume no network access during tests/builds; run `npm run setup` beforehand.
-- Do not modify `core/` or `cubism/` unless explicitly required.
+- Do not modify `Core/` or `cubism/` unless explicitly required.
 - Use provided helpers (e.g., `resolveURL`) to keep resource references consistent.
