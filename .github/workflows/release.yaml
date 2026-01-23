@@ -4,22 +4,30 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
   Release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6
         with:
           submodules: true
-      - uses: actions/setup-node@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
         with:
           node-version: 25
           registry-url: 'https://registry.npmjs.org'
 
-      - run: npm install
-      - run: npm run setup
+      - name: Install dependencies
+        run: npm install
+
+      - name: Setup Live2D core
+        run: npm run setup
 
       - name: Build Cubism SDK
         run: |
