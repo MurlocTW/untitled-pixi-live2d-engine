@@ -228,6 +228,6 @@ model.expression('id')
 
 ### Q: 为什么同时加载多个模型后，模型更新异常？
 
-在 **Cubism Modern** 运行时下，通常是由于 `configureCubism` 时配置的工作内存不足导致。
+在 **Cubism Modern** 运行时下，通常是由于 `configureCubismSDK` 时配置的工作内存不足导致。
 
 请尝试在初始化阶段增大 `memorySizeMB` 的值（最小 16MB）。

@@ -227,6 +227,6 @@ For more advanced usage, see
 
 ### Q: Why do models stop updating when multiple models are loaded?
 
-When using the **Cubism Modern** runtime, this issue is usually caused by insufficient work memory configured via `configureCubism`.
+When using the **Cubism Modern** runtime, this issue is usually caused by insufficient work memory configured via `configureCubismSDK`.
 
 Try increasing `memorySizeMB` during initialization (minimum: 16MB).
