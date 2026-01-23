@@ -10,8 +10,7 @@ A Live2D rendering and control plugin designed for **[PixiJS v8](https://pixijs.
 This project aims to provide a **unified, concise, and highly maintainable** API for loading, rendering, and interacting with Live2D models on the Web.  
 Compared to the official Live2D SDK, this library significantly reduces usage complexity while preserving full functionality, with additional optimizations for stability and long-term maintainability.
 
-This project is based on the  
-[pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) branch.  
+This project is based on the [pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) branch.  
 It is **fully compatible with PixiJS v8 and Live2D Cubism 5.4 SDK**, and further provides:
 
 - Additional practical APIs

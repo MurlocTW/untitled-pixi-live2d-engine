@@ -10,8 +10,7 @@
 本项目旨在为 Web 端 Live2D 模型的加载、渲染与交互提供 **统一、简洁且高可维护性** 的 API。
 相较于官方 Live2D SDK，本库在保持功能完整的同时，显著降低了使用复杂度，并在稳定性与长期维护性上进行了优化。
 
-本项目基于
-[pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) 分支开发，**完全适配 PixiJS v8 与 Live2D Cubism 5.4 SDK**，
+本项目基于 [pixi-live2d-display-mulmotion](https://github.com/Sekai-World/pixi-live2d-display) 分支开发，**完全适配 PixiJS v8 与 Live2D Cubism 5.4 SDK**，
 并在此基础上：
 
 - 增加了多项实用 API
