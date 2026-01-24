@@ -77,6 +77,12 @@ import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism-legacy'
 import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism'
 ```
 
+### 通过 HTML 导入
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/untitled-pixi-live2d-engine/dist/index.min.js" integrity="sha256-f0PrxTreXS5JbP3RltqJCyQxdsq63Lvw37PSFZYZJP0=" crossorigin="anonymous"></script>
+```
+
 ---
 
 ## Cubism 运行时说明
@@ -146,7 +152,7 @@ cubism.js
 
 ```ts
 import { Application } from 'pixi.js'
-import { configureCubism, Live2DModel } from 'untitled-pixi-live2d-engine'
+import { configureCubismSDK, Live2DModel } from 'untitled-pixi-live2d-engine'
 
 const app = new Application()
 await app.init({
