@@ -17,15 +17,6 @@
 - 强化了 TypeScript 类型安全
 - 优化了内部结构，使其更易扩展与维护
 
-> [!IMPORTANT]
-> 项目目前处于测试阶段，如想尝试，请使用以下命令进行安装。
->
-> ```shell
-> npm install untitled-pixi-live2d-engine@prerelease
-> ```
-
----
-
 ## 功能特性
 
 - 支持 **所有版本** 的 Live2D 模型（Cubism 2 / 3 / 4 / 5）
@@ -47,15 +38,11 @@
 - 支持 **多动作并行播放**
 - 支持播放动作的 **末帧状态（Freeze）**
 
----
-
 ## 依赖要求
 
 - **PixiJS**：`8.x`
 - **Cubism 运行时**：`2.1` 或 `5`
 - **浏览器环境**：需支持 `WebGL` 与 `ES6`
-
----
 
 ## 安装
 
@@ -80,10 +67,8 @@ import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism'
 ### 通过 HTML 导入
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/untitled-pixi-live2d-engine/dist/index.min.js" integrity="sha256-f0PrxTreXS5JbP3RltqJCyQxdsq63Lvw37PSFZYZJP0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/untitled-pixi-live2d-engine/dist/index.min.js"></script>
 ```
-
----
 
 ## Cubism 运行时说明
 
@@ -103,8 +88,6 @@ index.js
 ```
 
 > 当项目中需要同时加载 Cubism 2 与 Cubism 3+ 模型时，请使用统一入口。
-
----
 
 ### Cubism Legacy Only（Cubism 2.1）
 
@@ -127,8 +110,6 @@ index.js
 cubism-legacy.js
 ```
 
----
-
 ### Cubism Modern Only（Cubism 3 / 4 / 5）
 
 #### 前置要求
@@ -143,8 +124,6 @@ cubism-legacy.js
 ```text
 cubism.js
 ```
-
----
 
 ## 快速开始
 
@@ -176,8 +155,6 @@ model.position.set(app.screen.width / 2, app.screen.height / 2)
 
 app.stage.addChild(model)
 ```
-
----
 
 ## 常用 API 示例
 
@@ -227,8 +204,6 @@ model.expression('id')
 
 详细用法可参见
 [pixi-live2d-display-lipsync](https://github.com/RaSan147/pixi-live2d-display)
-
----
 
 ## 常见问题
 

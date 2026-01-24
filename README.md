@@ -17,15 +17,6 @@ It is **fully compatible with PixiJS v8 and Live2D Cubism 5.4 SDK**, and further
 - Stronger TypeScript type safety
 - Optimized internal architecture for extensibility and maintainability
 
-> [!IMPORTANT]
-> The project is currently in the testing phase. If you want to try it out, please install it using the following command:
->
-> ```shell
-> npm install untitled-pixi-live2d-engine@prerelease
-> ```
-
----
-
 ## Features
 
 - Supports **all versions** of Live2D models (Cubism 2 / 3 / 4 / 5)
@@ -47,15 +38,11 @@ It is **fully compatible with PixiJS v8 and Live2D Cubism 5.4 SDK**, and further
 - **Parallel motion playback**
 - Support for **freezing at the last frame of motions**
 
----
-
 ## Requirements
 
 - **PixiJS**: `8.x`
 - **Cubism runtime**: `2.1` or `5`
 - **Browser**: Must support `WebGL` and `ES6`
-
----
 
 ## Installation
 
@@ -80,10 +67,8 @@ import { Live2DModel } from 'untitled-pixi-live2d-engine/cubism'
 ### Import via HTML
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/untitled-pixi-live2d-engine/dist/index.min.js" integrity="sha256-f0PrxTreXS5JbP3RltqJCyQxdsq63Lvw37PSFZYZJP0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/untitled-pixi-live2d-engine/dist/index.min.js"></script>
 ```
-
----
 
 ## Cubism Runtime Overview
 
@@ -103,8 +88,6 @@ index.js
 ```
 
 > Use this unified entry when your project needs to load both Cubism 2 and Cubism 3+ models.
-
----
 
 ### Cubism Legacy Only (Cubism 2.1)
 
@@ -126,8 +109,6 @@ You must manually include `live2d.min.js`:
 cubism-legacy.js
 ```
 
----
-
 ### Cubism Modern Only (Cubism 3 / 4 / 5)
 
 #### Prerequisites
@@ -142,8 +123,6 @@ You must include `live2dcubismcore.min.js`:
 ```text
 cubism.js
 ```
-
----
 
 ## Quick Start
 
@@ -175,8 +154,6 @@ model.position.set(app.screen.width / 2, app.screen.height / 2)
 
 app.stage.addChild(model)
 ```
-
----
 
 ## Common API Examples
 
@@ -226,8 +203,6 @@ model.expression('id')
 
 For more advanced usage, see
 [pixi-live2d-display-lipsync](https://github.com/RaSan147/pixi-live2d-display)
-
----
 
 ## FAQ
 

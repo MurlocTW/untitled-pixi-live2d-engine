@@ -1,10 +1,22 @@
 {
   "name": "untitled-pixi-live2d-engine",
-  "version": "1.0.0-rc.1",
-  "description": "PixiJS v8 Live2D Engine | Supports Cubism 2–5 SDK | Lip-sync & Parallel Motion",
+  "version": "1.0.0",
+  "description": "PixiJS v8 Live2D Engine | Supports Cubism 25 SDK | Lip-sync & Parallel Motion",
   "packageManager": "pnpm@10.26.2",
   "main": "dist/index.js",
   "type": "module",
+  "keywords": [
+    "live2d",
+    "pixi",
+    "pixijs",
+    "cubism",
+    "anime",
+    "2d-animation"
+  ],
+  "bugs": {
+    "url": "https://github.com/Untitled-Story/untitled-pixi-live2d-engine/issues"
+  },
+  "homepage": "https://github.com/Untitled-Story/untitled-pixi-live2d-engine",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
@@ -47,7 +59,8 @@
     "lint": "eslint . --config eslint.config.mjs --rule \"prettier/prettier: error\"",
     "lint:fix": "npm run lint -- --fix",
     "typecheck": "node scripts/typecheck-src.mjs",
-    "check": "npm run lint && npm run typecheck"
+    "check": "npm run lint && npm run typecheck",
+    "format": "prettier --write ."
   },
   "files": [
     "dist",
