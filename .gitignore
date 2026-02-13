@@ -260,3 +260,6 @@ fabric.properties
 /Core/
 !/Core/README.md
 !/Core/live2d.d.ts
+
+# Vibe Coding
+.claude/

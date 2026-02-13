@@ -82,6 +82,15 @@ export interface Bounds {
   height: number
 }
 
+export interface LipSyncConfig {
+  /** @default 1.5 */
+  gain: number
+  /** @default 0.4 */
+  smoothing: number
+  /** @default 1 */
+  max: number
+}
+
 export interface InternalModelOptions extends MotionManagerOptions {
   /**
    * Define natural movements depth (0.0-1.0).
@@ -113,6 +122,8 @@ export abstract class InternalModel extends EventEmitter {
 
   pose?: unknown
   physics?: unknown
+
+  lipSyncConfig: LipSyncConfig = { gain: 1.5, smoothing: 0.4, max: 1 }
 
   /**
    * Original canvas width of the model. Note this doesn't represent the model's real size,

@@ -3,14 +3,15 @@ import { Live2DModel } from '../src'
 
 const applicationWrapper = document.getElementById('app')! as HTMLDivElement
 
-const pixiApplication = new PIXI.Application({
+const pixiApplication = new PIXI.Application()
+await pixiApplication.init({
   background: 0xffffff,
   resizeTo: applicationWrapper,
   autoDensity: true,
   antialias: true,
   resolution: window.devicePixelRatio || 1
 })
-applicationWrapper.appendChild(pixiApplication.view as HTMLCanvasElement)
+applicationWrapper.appendChild(pixiApplication.canvas)
 
 pixiApplication.stage.sortableChildren = true
 

@@ -268,13 +268,12 @@ export class CubismLegacyInternalModel extends InternalModel {
     this.updateNaturalMovements(dt, now)
 
     if (this.lipSync && this.motionManager.currentAudio) {
-      const lipSyncGain = 1.5
-      let value = this.motionManager.mouthSync() * lipSyncGain
-      const max_ = 1
+      const { gain, max } = this.lipSyncConfig
+      let value = this.motionManager.mouthSync() * gain
       const bias_power = 1.15
       const min_ = value > 0 ? 0.1 : 0
       value = Math.pow(value, bias_power)
-      value = clamp(value, min_, max_)
+      value = clamp(value, min_, max)
 
       for (let i = 0; i < this.motionManager.lipSyncIds.length; ++i) {
         this.coreModel.setParamFloat(
